@@ -1,0 +1,51 @@
+.title{
+    height: 395px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    background-color: var(--title-bg-color);
+    box-shadow: inset 0 -100px 150px -10px #00000020;
+
+    .title-image{
+        display: block;
+        width: 330px;
+        height: auto;
+        margin-right: 90px;
+        
+        animation-name: slide-up;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: 900ms;
+        animation-delay: 400ms;
+        animation-fill-mode: both;
+    }
+    .title-text{
+        margin-left: 90px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: start;
+        justify-content: center;
+        gap: 10px;
+        
+        animation-name: slide-left;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: 1000ms;
+        animation-delay: 700ms;
+        animation-fill-mode: both;
+        h1{
+            font-family: var(--main-font);
+            font-weight: lighter;
+            font-size: 30px;
+            color: var(--title-color);
+        }
+        p{
+            font-family: var(--main-font);
+            font-size: 20px;
+            color: var(--text-color-3);
+        }
+    }
+}

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@keyframes slide-up {
+    from {
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(600px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+@font-face {
+    font-family: main-font;
+    src: url(../fonts/IRANSansWeb-Light.eot);
+    src: url(../fonts/IRANSansWeb-Light.ttf);
+    src: url(../fonts/IRANSansWeb-Light.woff);
+    src: url(../fonts/IRANSansWeb-Light.woff2);
+}
+
+:root {
+    --main-font: main-font;
+
+    --header-text-color: #aaaaaa;
+    --header-border-color: #4f4e4e;
+    --header-bg-color: #242424;
+    --header-hover-text-color: #ffffff;
+
+    --title-bg-color: #efefef;
+
+    --text-color-1: #777c7e;
+    --text-color-2: #52575b;
+    --text-color-3: #303233;
+    --title-color: #ff070f;
+
+    --btn-fg-color: #acb3b5;
+    --btn-hover-color: #ed1c24;
+
+    --social-bg-color: #eeeeee;
+    --footer-bg-color: #242424;
+    --footer-border-color: #777777;
+}
